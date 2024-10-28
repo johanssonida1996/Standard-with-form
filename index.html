@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Stilren Hemsida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <a data-target="about" href="javascript:void(0)" class="skip-link">Hoppa till innehåll</a>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/logo/logo-white.svg" alt="logotyp för företaget" />
+        </div>
+        <div class="menu-icon" id="menu-icon" role="button" aria-label="Öppna menyn" aria-expanded="false" tabindex="0">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a data-target="home" href="javascript:void(0)">Hem</a></li>
+          <li><a data-target="about" href="javascript:void(0)">Om oss</a></li>
+          <li><a data-target="services" href="javascript:void(0)">Tjänster</a></li>
+          <li><a data-target="contact" href="javascript:void(0)">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="home" class="section section-home">
+        <div class="home-content">
+          <h1>Välkommen till Min Hemsida</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </section>
+      <section id="about" class="section section-height-about">
+        <div class="section-content">
+          <h2>Om oss</h2>
+          <div class="section-content__about">
+            <img src="assets/unnamed.webp" alt="Skriv i passande text till bild" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              <br />
+              <br />
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section section-height-services">
+        <div class="section-content">
+          <h2>Tjänster</h2>
+          <div class="section-content__services">
+            <div>
+              <img src="assets/unnamed.webp" alt="Skriv i passande text till bild" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+              <img src="assets/unnamed.webp" alt="Skriv i passande text till bild" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+              <img src="assets/unnamed.webp" alt="Skriv i passande text till bild" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+              <img src="assets/unnamed.webp" alt="Skriv i passande text till bild" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+              <img src="assets/unnamed.webp" alt="Skriv i passande text till bild" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+              <img src="assets/unnamed.webp" alt="Skriv i passande text till bild" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section section-height-contact">
+        <div class="section-content">
+          <h2>Kontakt</h2>
+          <div class="section-content__contact">
+            <div class="section-content__contact--text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="section-content__contact--form">
+              <form class="contact-form">
+                <div>
+                  <label for="name">Namn *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                  <label for="email">E-post *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              <div>
+                <label for="request-type">Typ av värde (valfritt)</label>
+                <select id="request-type" name="request-type">
+                  <option value="contact">Kontakt</option>
+                  <option value="quote">Offert</option>
+                  <option value="other">Annat</option>
+                </select>
+              </div>
+              <div>
+                <label for="message">Meddelande *</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Jag godkänner att ni sparar mina uppgifter i syfte att kunna kontakta mig *</label>
+              </div>
+              <div class="form-button">
+                <button type="submit">Skicka</button>
+              </div>               
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-container-colums">
+          <div class="footer-column">
+            <h3>Om Oss</h3>
+            <div class="footer-logo">
+              <p>Vi är ett företag som brinner för modern design och användarupplevelse.</p>
+              <img src="./assets/logo/logo-white.svg" alt="logotyp för företaget" />
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Kontakt</h3>
+            <div class="footer-contact">
+              <div>
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <a href="tel:0101234567">010-123 45 67</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:example@example.com">example@example.com</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <a href="https://maps.app.goo.gl/FcVPWoUhqi2QPki37" target="_blank">Kumla, Örebro</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Sociala medier</h3>
+            <div class="footer-social-icons">
+              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-container-text">
+          <p>© Copyright Example 2024</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
